@@ -9,13 +9,15 @@
 </head>
 <body>
     <div class="container">
-        <form>
+        <form onsubmit="sendEmail(); reset(); return false;">
             <h3>Formail</h3>
             <input type="text" name="name" id="name" placeholder="Name" required>
             <input type="text" name="email" id="email" placeholder="Email" required>
             <textarea id="message"  rows="10" placeholder="how can we haelp you?"></textarea>
-            <button>Send</button>
+            <button type="submit">Send</button>
         </form>
     </div>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
